@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="custom-shape-divider-top-1673549831">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="container">
+        <form action="connect.php" method="post" enctype="multipart/form-data" autocomplete="off">
+            <h1 class="main_heading" style="color:#280080;">School Application Form</h1>
+            <hr>
+            <h3>Student Name</h3>
+
+            <Div class="Name">
+                <div class="Student_First_name">
+                    <input type="text" name="First_name" autofocus="autofocus" required="required">
+                    <p class="First_name">First name</p>
+                </div>
+
+                <div class="Student_Last_name">
+                    <input type="text" name="Last_name" required="required">
+                    <p class="Last_name" >Last name</p>
+                </div>
+            </Div>
+
+
+            <p>
+            <fieldset>
+                <legend>Gender</legend>
+                Male <input type="radio" name="gender" id="male" value="m" required="required">
+                Female <input type="radio" name="gender" id="female" value="f" required="required">
+            </fieldset>
+            </p>
+            <div class="Student_Standard_Division">
+                <div class="Student_Standard">
+                    <p class="Standard">Standard</p>
+                    <select name="Standard" id="Standard" required="required">
+                        <option value="">---Select Standard---</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="8th">8th</option>
+                        <option value="9th">9th</option>
+                        <option value="10th">10th</option>
+                    </select>
+                </div>
+
+                <div class="Student_Division">
+                    <p class="Division">Division</p>
+                    <select name="Division" id="Division" required="required">
+                        <option value="">---Select Division---</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+            </div>
+            <div class="student_photo">Student Photo</div>
+            <DIV class="button-wrap">
+                <label for="image_file" class="button">Upload File</label>
+                <input type="file" name="image_file" id="image_file" accept="image/png,image/jpeg" required="required">
+            </DIV>
+            
+            
+            <p>
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+
+        </form>
+    </div>
+</body>
+
+</html>
